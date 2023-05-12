@@ -25,19 +25,10 @@ public abstract class DrawableImage extends DrawableItem {
     }
 
     public void draw(Graphics g) {
-
-
-        int dx1, dy1, dx2, dy2;
-
-
-        dx1 = this.getX();
-        dx2 = this.getX() + this.getWidth();
-
-
-
-        dy1 = this.getY();
-        dy2 = this.getY() + this.getHeight();
-
+        int dx1 = this.getX();
+        int dy1 = this.getY();
+        int dx2 = this.getX() + this.getWidth();
+        int dy2 = this.getY() + this.getHeight();
 
         g.drawImage(getImage(),
                     dx1, dy1, dx2, dy2,
